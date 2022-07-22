@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './NavBar.module.css';
+
 
 const NavBar = () => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -9,13 +9,13 @@ const NavBar = () => (
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item active">
-          <a className="nav-link" href="#">Home</a>
+          <a className="nav-link" href="https://github.com/ThiagoYuri/thiagoyuri-page">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Projects</a>
+          <a className="nav-link" href="https://github.com/ThiagoYuri/thiagoyuri-page">Projects</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Experiences</a>
+          <a className="nav-link" href="https://github.com/ThiagoYuri/thiagoyuri-page">Experiences</a>
         </li>
       </ul>
     </div>
