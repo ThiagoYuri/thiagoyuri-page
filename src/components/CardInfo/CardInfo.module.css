@@ -1,9 +1,5 @@
-.CardInfo {
-    background-color: #000;
-    border-radius: 20px;
-}
-
 #imageDirectory {
+    margin-top: 2%;
     width: 100%;
     height: 100%;
     border-radius: 10%;
