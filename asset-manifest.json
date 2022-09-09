@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/thiagoyuri-page/static/css/main.b6558295.css",
-    "main.js": "/thiagoyuri-page/static/js/main.2a300079.js",
+    "main.css": "/thiagoyuri-page/static/css/main.e394f2ce.css",
+    "main.js": "/thiagoyuri-page/static/js/main.94e83c09.js",
     "static/js/787.f18add18.chunk.js": "/thiagoyuri-page/static/js/787.f18add18.chunk.js",
     "static/media/loading.gif": "/thiagoyuri-page/static/media/loading.6db96bbbde2f5d83bbda.gif",
     "index.html": "/thiagoyuri-page/index.html",
-    "main.b6558295.css.map": "/thiagoyuri-page/static/css/main.b6558295.css.map",
-    "main.2a300079.js.map": "/thiagoyuri-page/static/js/main.2a300079.js.map",
+    "main.e394f2ce.css.map": "/thiagoyuri-page/static/css/main.e394f2ce.css.map",
+    "main.94e83c09.js.map": "/thiagoyuri-page/static/js/main.94e83c09.js.map",
     "787.f18add18.chunk.js.map": "/thiagoyuri-page/static/js/787.f18add18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6558295.css",
-    "static/js/main.2a300079.js"
+    "static/css/main.e394f2ce.css",
+    "static/js/main.94e83c09.js"
   ]
 }
