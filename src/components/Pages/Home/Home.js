@@ -1,25 +1,19 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import styles from './Home.module.css';
+import {get} from '../../../script/api'
+import jsonConfig from '../../../config/config.json'
 
+function Home ()  {
+    const [user,setImg] = useState("");
+    useEffect(()=>{
+        get((jsonConfig.GitHub.Link.Profile.replace("{0}",jsonConfig.GitHub.Nickname)),setImg)
+    },[])    
 
-
-const Home = function ()  {
-    const [img,setImg] = useState("");
-
-    function ImageUser(){
-        fetch("https://api.github.com/users/ThiagoYuri",{method:"GET"})
-        .then(data => {
-            return data.json();
-        }).then((a)=>{
-            setImg(a.avatar_url)
-        })
-    }
-    ImageUser()
     return(
     <div className={styles.Home}>
         <div className='container'>
             <div>
-                <img src={img} alt="teste" id={styles.ImgPerfil}></img>                
+                <img src={user.avatar_url} alt="teste" id={styles.ImgPerfil}></img>                
             </div>
             <div>               
                 <img className="center"src="https://github-readme-stats.vercel.app/api?username=ThiagoYuri&show_icons=true&theme=react&include_all_commits=true&count_private=false" alt='Board'></img>

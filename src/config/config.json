@@ -1,6 +1,15 @@
-[
-    {
-        "Name":"Thiago Yuri Oliveira Monteiro",
-        "WelcomeMessage": "Bem Vindo\n "
-    }
-]
+{
+        "Home":{
+            "Name":"Thiago Yuri Oliveira Monteiro",
+            "WelcomeMessage": "Bem Vindo\n "
+        },
+        "GitHub":
+        {
+            "Nickname":"ThiagoYuri",
+            "Link":{
+                "Profile":"https://api.github.com/users/{0}",
+                "Repos":"https://api.github.com/repos/{0}/${1}",
+                "ReposPath":"https://api.github.com/repos/${0}/${1}/contents/{2}"
+            }            
+        }
+}
