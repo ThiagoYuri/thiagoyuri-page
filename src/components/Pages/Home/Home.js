@@ -4,11 +4,11 @@ import {get} from '../../../script/api'
 import jsonConfig from '../../../config/config.json'
 
 function Home ()  {
-    const [user,setImg] = useState("");
+    const [user,setUser] = useState("");
     useEffect(()=>{
-        get((jsonConfig.GitHub.Link.Profile.replace("{0}",jsonConfig.GitHub.Nickname)),setImg)
+        get((jsonConfig.GitHub.Link.Profile.replace("{0}",jsonConfig.GitHub.Nickname)),setUser)
     },[])    
-
+    
     return(
     <div className={styles.Home}>
         <div className='container'>
