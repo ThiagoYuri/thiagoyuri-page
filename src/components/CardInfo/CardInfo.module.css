@@ -5,3 +5,10 @@
     border-radius: 10%;
 }
 
+#titleCenter{
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: "middle"
+}
