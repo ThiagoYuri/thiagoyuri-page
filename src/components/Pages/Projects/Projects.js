@@ -9,12 +9,9 @@ export function Projects(){
     
     const ListComponents = [];
 
-
-
     const [listRepos,setRepos] = useState([]);
     useEffect(()=>{
-        get((jsonConfig.GitHub.Link.AllRepos.replace("{0}",jsonConfig.GitHub.Nickname)),setRepos)
-        //setRepos(listRepos)
+        get((jsonConfig.GitHub.Link.AllRepos.replace("{0}",jsonConfig.GitHub.Nickname)),setRepos,(x=>x.fork === false))        
     },[])   
 
 
