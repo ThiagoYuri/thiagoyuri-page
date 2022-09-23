@@ -10,7 +10,17 @@
                 "Profile":"https://api.github.com/users/{0}",
                 "AllRepos":"https://api.github.com/users/{0}/repos",
                 "Repos":"https://api.github.com/repos/{0}/{1}",
-                "ReposPath":"https://api.github.com/repos/${0}/${1}/contents/{2}"
-            }            
+                "ReposPath":"https://api.github.com/repos/{0}/{1}/contents/{2}"
+            }
+        },
+        "Projects":{
+            "category":["Studies","Projects"],
+            "lts":{
+                "468043889":{
+                    "image":"pokedex",
+                    "category":0
+                }
+                
+            }
         }
 }
