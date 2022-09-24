@@ -17,7 +17,7 @@ function CardInfo (props) {
               </div>
             </div>
             <div className="card-body" >
-              <h5 className="card-title" id={styles.titleCenter}>{cardInfo.name.substring(0,30)}</h5>          
+              <p className="card-title" id={styles.titleCenter}>{cardInfo.name.substring(0,30)}</p>          
             </div>   
           </div>
         </div>  
