@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/thiagoyuri-page/static/css/main.8aee35a3.css",
-    "main.js": "/thiagoyuri-page/static/js/main.1f05a3e8.js",
+    "main.css": "/thiagoyuri-page/static/css/main.74dd38b3.css",
+    "main.js": "/thiagoyuri-page/static/js/main.06847764.js",
     "static/js/787.f18add18.chunk.js": "/thiagoyuri-page/static/js/787.f18add18.chunk.js",
     "static/media/loading.gif": "/thiagoyuri-page/static/media/loading.6db96bbbde2f5d83bbda.gif",
-    "static/media/468043889.jpg": "/thiagoyuri-page/static/media/468043889.211cda574864e2c128af.jpg",
+    "static/media/pokedex.png": "/thiagoyuri-page/static/media/pokedex.8636432f7e6e64268f5c.png",
     "index.html": "/thiagoyuri-page/index.html",
-    "main.8aee35a3.css.map": "/thiagoyuri-page/static/css/main.8aee35a3.css.map",
-    "main.1f05a3e8.js.map": "/thiagoyuri-page/static/js/main.1f05a3e8.js.map",
+    "main.74dd38b3.css.map": "/thiagoyuri-page/static/css/main.74dd38b3.css.map",
+    "main.06847764.js.map": "/thiagoyuri-page/static/js/main.06847764.js.map",
     "787.f18add18.chunk.js.map": "/thiagoyuri-page/static/js/787.f18add18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8aee35a3.css",
-    "static/js/main.1f05a3e8.js"
+    "static/css/main.74dd38b3.css",
+    "static/js/main.06847764.js"
   ]
 }
