@@ -19,6 +19,26 @@
                 "468043889":{
                     "image":"pokedex",
                     "category":0
+                },
+                "519203876":{
+                    "image":"studies",
+                    "category":0
+                },
+                "433830413":{
+                    "image":"alura-icon",
+                    "category":0
+                },
+                "524118991":{
+                    "image":"android",
+                    "category":0
+                },
+                "432330567":{
+                    "image":"cisco-icon",
+                    "category":0
+                },
+                "427532755":{
+                    "image":"devmedia-icon",
+                    "category":0
                 }
                 
             }
