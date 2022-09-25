@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/thiagoyuri-page/static/css/main.74dd38b3.css",
-    "main.js": "/thiagoyuri-page/static/js/main.06847764.js",
+    "main.css": "/thiagoyuri-page/static/css/main.6f472a04.css",
+    "main.js": "/thiagoyuri-page/static/js/main.759a5171.js",
     "static/js/787.f18add18.chunk.js": "/thiagoyuri-page/static/js/787.f18add18.chunk.js",
-    "static/media/loading.gif": "/thiagoyuri-page/static/media/loading.6db96bbbde2f5d83bbda.gif",
+    "static/media/notExists.gif": "/thiagoyuri-page/static/media/notExists.1e9105bbc7ab62387a4d.gif",
+    "static/media/alura-icon.png": "/thiagoyuri-page/static/media/alura-icon.e3ff1b4274bf02f5ff8b.png",
+    "static/media/cisco-icon.png": "/thiagoyuri-page/static/media/cisco-icon.f1380dab153c8e5f5048.png",
     "static/media/pokedex.png": "/thiagoyuri-page/static/media/pokedex.8636432f7e6e64268f5c.png",
+    "static/media/studies.png": "/thiagoyuri-page/static/media/studies.0bd52472358703b9e409.png",
+    "static/media/devmedia-icon.png": "/thiagoyuri-page/static/media/devmedia-icon.5b65e77fbd38850958b9.png",
     "index.html": "/thiagoyuri-page/index.html",
-    "main.74dd38b3.css.map": "/thiagoyuri-page/static/css/main.74dd38b3.css.map",
-    "main.06847764.js.map": "/thiagoyuri-page/static/js/main.06847764.js.map",
+    "main.6f472a04.css.map": "/thiagoyuri-page/static/css/main.6f472a04.css.map",
+    "main.759a5171.js.map": "/thiagoyuri-page/static/js/main.759a5171.js.map",
     "787.f18add18.chunk.js.map": "/thiagoyuri-page/static/js/787.f18add18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74dd38b3.css",
-    "static/js/main.06847764.js"
+    "static/css/main.6f472a04.css",
+    "static/js/main.759a5171.js"
   ]
 }
