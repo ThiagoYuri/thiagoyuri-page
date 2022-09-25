@@ -1,5 +1,5 @@
 import React from 'react';
-import loading from '../../resources/loading.gif';
+import loading from '../../resources/notExists.gif';
 import styles from './CardInfo.module.css';
 import jsonConfig from '../../config/config.json'
 
