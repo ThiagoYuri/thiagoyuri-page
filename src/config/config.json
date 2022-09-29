@@ -16,10 +16,6 @@
         "Projects":{
             "category":["Studies","Projects"],
             "lts":{
-                "468043889":{
-                    "image":"pokedex",
-                    "category":0
-                },
                 "519203876":{
                     "image":"studies",
                     "category":0
@@ -39,8 +35,47 @@
                 "427532755":{
                     "image":"devmedia-icon",
                     "category":0
+                },
+                "468043889":{
+                    "image":"pokedexDesktop",
+                    "category":1
+                },
+                "516943648":{
+                    "image":"pokedexWeb",
+                    "category":1
+                },
+                "507096924":{
+                    "image":"documentServe",
+                    "category":1
+                },
+                "474015967":{
+                    "image":"documentClient",
+                    "category":1
+                },
+                "518973440":{
+                    "image":"embed",
+                    "category":1
+                },
+                "477849808":{
+                    "image":"bi",
+                    "category":1
+                },
+                "509104869":{
+                    "image":"portfolio",
+                    "category":1
+                },
+                "441205049":{
+                    "image":"treinaweb",
+                    "category":0
+                },
+                "454100739":{
+                    "image":"udemy-icon",
+                    "category":0
+                },
+                "524127667":{
+                    "image":"simba",
+                    "category":1
                 }
-                
             }
         }
 }
