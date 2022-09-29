@@ -2,17 +2,21 @@ import React, { useState, useEffect } from 'react';
 import CardInfo from '../../CardInfo/CardInfo';
 import { get } from '../../../script/api'
 import jsonConfig from '../../../config/config.json'
+import Loading from '../../Loading/Loading'
 
 
-
-export function Projects() {
+export function Projects() {    
     var ListComponents = [];
     const ListCategory = [];
     const [listRepos, setRepos] = useState([]);
     const [listComponentsFilter, setlistComponentsFilter] = useState([]);
-    useEffect(() => {
+    const [loadingStatus, setLoading] = useState(false);
+    useEffect(() => {  
         get((jsonConfig.GitHub.Link.AllRepos.replace("{0}", jsonConfig.GitHub.Nickname)), setRepos, (x => x.fork === false));
         get((jsonConfig.GitHub.Link.AllRepos.replace("{0}", jsonConfig.GitHub.Nickname)), setlistComponentsFilter, (x => x.fork === false));
+        setTimeout(()=>{
+            setLoading(true)
+        },2000)
     }, [])
 
     //filter
@@ -21,7 +25,7 @@ export function Projects() {
         if (document.getElementById("searchByName").value !== "")
             setlistComponentsFilter(listRepos.filter(x => x.name.includes(document.getElementById("searchByName").value)))
         if (document.getElementById('selectCategory').selectedIndex !== 0){
-            alert(document.getElementById('selectCategory').selectedIndex)
+            //alert(document.getElementById('selectCategory').selectedIndex)
             setlistComponentsFilter(listRepos.filter(x => jsonConfig.Projects.lts[x.id]?.category === (document.getElementById('selectCategory').selectedIndex-1))
             )
         }
@@ -37,9 +41,14 @@ export function Projects() {
         ListCategory.push(<option>{data}</option>)
     })
 
-    return (
+    return (        
         <div className="container">
-            <div className="home-body">
+            {//create ou destroy loading
+                !loadingStatus && <Loading />
+            }
+            {
+                loadingStatus &&
+                <div className="home-body">
                 <nav className="navbar navbar-expand-lg">
                     <input className="form-control" type="search" placeholder="Search by name" aria-label="Search" id='searchByName' onChange={filterList}></input>
                     <select className="form-select " aria-label="Default select example" id="selectCategory" onChange={filterList}>
@@ -50,7 +59,8 @@ export function Projects() {
                 <div className="row row-cols-1 row-cols-md-3 g-4" style={{ padding: '0px 20px 0px 20px' }}>
                     {ListComponents}
                 </div>
-            </div>
+             </div>
+            }            
         </div >
     )
 };
