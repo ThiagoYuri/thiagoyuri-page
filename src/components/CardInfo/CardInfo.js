@@ -1,17 +1,18 @@
 import React from 'react';
-import loading from '../../resources/notExists.gif';
+import notFound from '../../resources/notExists.gif';
 import styles from './CardInfo.module.css';
 import jsonConfig from '../../config/config.json'
 
 function CardInfo (props) {
+    //variables
     const cardInfo = props.CardInfo
     return (
         <div className="card" id={styles.cardStyle}>
-            <div className="btn btn-primary" id={styles.cardStyle}>
+            <div className="btn btn-primary" id={styles.cardStyle} onClick={()=>{console.log(cardInfo.id)}}>
             <div>
               <div className='card-img-top' >
                 <img 
-                  src={(jsonConfig.Projects.lts[cardInfo.id.toString()]?.image) !== undefined ?require("../../resources/projects/"+jsonConfig.Projects.lts[cardInfo.id.toString()]?.image+".png"):loading}
+                  src={(jsonConfig.Projects.lts[cardInfo.id.toString()]?.image) !== undefined ?require("../../resources/projects/"+jsonConfig.Projects.lts[cardInfo.id.toString()]?.image+".png"):notFound}
                   id={styles.imageDirectory} 
                   alt="Card projects"/>
               </div>

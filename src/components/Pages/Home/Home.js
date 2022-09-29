@@ -1,49 +1,54 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Home.module.css';
-import {get} from '../../../script/api'
+import { get } from '../../../script/api'
 import jsonConfig from '../../../config/config.json'
 
-function Home ()  {
-    const [user,setUser] = useState("");
-    useEffect(()=>{
-        get((jsonConfig.GitHub.Link.Profile.replace("{0}",jsonConfig.GitHub.Nickname)),setUser)
-    },[])    
-    
-    return(
-    <div className={styles.Home}>
-        <div className='container'>
-            <div>
-                <img src={user.avatar_url} alt="teste" id={styles.ImgPerfil}></img>                
-            </div>
-            <div>               
-                <img className="center"src="https://github-readme-stats.vercel.app/api?username=ThiagoYuri&show_icons=true&theme=react&include_all_commits=true&count_private=false" alt='Board'></img>
-                    
-                <div >                
-                    <table className="tableCenter">
-                        <tr className="center">
-                            <td><img  alt="Th-c" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"/></td>
-                            <td><img  alt="Th-csharp" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-plain.svg"/></td>
-                            <td><img  alt="Th-dot-net" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original.svg"/></td>
-                            <td><img  alt="Th-java" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-original.svg"/></td> 
-                            
-                            <td><img  alt="Th-HTML" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"/></td>
-                            <td><img  alt="Th-CSS" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"/></td>
-                            
-                            <td><img  alt="Th-Js" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"/></td>
-                            <td><img  alt="Th-java" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"/></td>
-                            <td><img  alt="Th-java" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"/></td> 
-                            <td><img  alt="Th-java" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg"/></td> 
-                            
-                            <td><img  alt="Th-github" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"/></td>
-                            <td><img  alt="Th-github" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"/></td>
-                            <td><img  alt="Th-github" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"/></td>
-                        </tr>
-                    </table>
+function Home() {
+     {/*Variables*/}
+    const [user, setUser] = useState("");
+    {/*Send request get API*/ }
+    useEffect(() => {
+        get((jsonConfig.GitHub.Link.Profile.replace("{0}", jsonConfig.GitHub.Nickname)), setUser)
+    }, [])
+
+    return (
+        <div className={styles.Home}>
+            <div className='container'>
+                <div>
+                    <img src={user.avatar_url} alt="teste" id={styles.ImgPerfil}></img>
+                </div>
+                <div>
+                    {/*Image profile*/}
+                    <img className="center" src="https://github-readme-stats.vercel.app/api?username=ThiagoYuri&show_icons=true&theme=react&include_all_commits=true&count_private=false" alt='Board'></img>
+
+                    {/*Icons Skills*/}
+                    <div >
+                        <table className="tableCenter">
+                            <tr className="center">
+                                <td><img alt="Th-c" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" /></td>
+                                <td><img alt="Th-csharp" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-plain.svg" /></td>
+                                <td><img alt="Th-dot-net" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original.svg" /></td>
+                                <td><img alt="Th-java" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-original.svg" /></td>
+
+                                <td><img alt="Th-HTML" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" /></td>
+                                <td><img alt="Th-CSS" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" /></td>
+
+                                <td><img alt="Th-Js" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" /></td>
+                                <td><img alt="Th-java" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" /></td>
+                                <td><img alt="Th-java" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" /></td>
+                                <td><img alt="Th-java" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" /></td>
+
+                                <td><img alt="Th-github" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" /></td>
+                                <td><img alt="Th-github" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" /></td>
+                                <td><img alt="Th-github" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" /></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-)};
+    )
+};
 
 Home.propTypes = {};
 

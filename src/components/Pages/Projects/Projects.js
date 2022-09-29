@@ -6,14 +6,17 @@ import Loading from '../../Loading/Loading'
 
 
 export function Projects() {    
+     {/*Variables*/}
     var ListComponents = [];
     const ListCategory = [];
     const [listRepos, setRepos] = useState([]);
     const [listComponentsFilter, setlistComponentsFilter] = useState([]);
     const [loadingStatus, setLoading] = useState(false);
+     {/*Send request get repos list*/}
     useEffect(() => {  
         get((jsonConfig.GitHub.Link.AllRepos.replace("{0}", jsonConfig.GitHub.Nickname)), setRepos, (x => x.fork === false));
         get((jsonConfig.GitHub.Link.AllRepos.replace("{0}", jsonConfig.GitHub.Nickname)), setlistComponentsFilter, (x => x.fork === false));
+        //modified loading to true
         setTimeout(()=>{
             setLoading(true)
         },2000)
@@ -30,6 +33,7 @@ export function Projects() {
             )
         }
     }
+
     //create List
     listComponentsFilter.forEach((data) => {
         ListComponents.push(<div className="col-12 col-lg-3 col-md-6" style={{ paddingTop: '10px' }}>
@@ -37,6 +41,7 @@ export function Projects() {
         </div>);
     });
 
+    //get list category in json
     jsonConfig.Projects.category.forEach((data) => {
         ListCategory.push(<option>{data}</option>)
     })
