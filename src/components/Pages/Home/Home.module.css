@@ -2,6 +2,28 @@
 
 #ImgPerfil{
     border-radius: 50%;
-    width: 25%;
-    height: 25%;
+    width: 15%;
+    height: 15%;
+}
+
+
+
+
+@media(max-width:700px){
+    .TextTitle{
+        font-size: 15px;
+    }
+    .textBody{
+        font-size: 8px;
+    }
+}
+
+
+@media(min-width:701px){
+    .TextTitle{
+        font-size: 20px;
+    }
+    .textBody{
+        font-size: 15px;
+    }
 }

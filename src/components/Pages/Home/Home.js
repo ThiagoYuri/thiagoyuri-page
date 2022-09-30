@@ -4,47 +4,71 @@ import { get } from '../../../script/api'
 import jsonConfig from '../../../config/config.json'
 
 function Home() {
-     {/*Variables*/}
+    //Variables
     const [user, setUser] = useState("");
-    {/*Send request get API*/ }
+    const experiences = [];
+    const skils = [];
+    const aboutMe = [];
+    //Send request get API
     useEffect(() => {
         get((jsonConfig.GitHub.Link.Profile.replace("{0}", jsonConfig.GitHub.Nickname)), setUser)
     }, [])
+
+    //Adding experiences
+    jsonConfig.Home.Experiences.forEach((data) => {
+        experiences.push(
+            <li class={styles.textBody}>{data}</li>
+        );
+    });
+
+    //Adding skills
+    jsonConfig.Home.MySkills.forEach((data) => {
+        skils.push(
+            <li class={styles.textBody}>{data}</li>
+        );
+    });
+
+    //Adding aboutme
+    jsonConfig.Home.AboutMe.forEach((data) => {
+        aboutMe.push(
+            <p class={styles.textBody}>{data}</p>    
+        );
+    });
 
     return (
         <div className={styles.Home}>
             <div className='container'>
                 <div>
-                    <img src={user.avatar_url} alt="teste" id={styles.ImgPerfil}></img>
-                </div>
-                <div>
-                    {/*Image profile*/}
-                    <img className="center" src="https://github-readme-stats.vercel.app/api?username=ThiagoYuri&show_icons=true&theme=react&include_all_commits=true&count_private=false" alt='Board'></img>
+                        <div className="card" style={{width:"100%",marginTop:"5px"}}>
+                                <img src={user.avatar_url} alt="teste" className="center" style={{marginTop:"10px"}}  id={styles.ImgPerfil}/>
+                                <div className="card-body center">
+                                    <p className={styles.TextTitle} >{jsonConfig.Home.Name}</p>                                    
+                                </div>
+                                <div className='container'>
+                                    <div className='row '>
+                                            <div className='col-8'>
+                                                <div className="card" >
+                                                <div class="card-body">
+                                                    <p className={styles.TextTitle}>Sobre min</p>     
+                                                    {aboutMe}                           
+                                                    <p className={styles.TextTitle}>Experiências</p>         
+                                                    <ul>{experiences}</ul>                                                                        
+                                                </div>
+                                                </div>   
+                                            </div>
+                                            <div className='col-4'>
+                                                <div className="card" >
+                                                    <div class="card-body">
+                                                        <p className={styles.TextTitle} style={{textAlign:"center"}}>Conhecimentos</p> 
+                                                        <ul>{skils}</ul>                               
+                                                    </div>
+                                                </div>
 
-                    {/*Icons Skills*/}
-                    <div >
-                        <table className="tableCenter">
-                            <tr className="center">
-                                <td><img alt="Th-c" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" /></td>
-                                <td><img alt="Th-csharp" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-plain.svg" /></td>
-                                <td><img alt="Th-dot-net" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original.svg" /></td>
-                                <td><img alt="Th-java" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-original.svg" /></td>
-
-                                <td><img alt="Th-HTML" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" /></td>
-                                <td><img alt="Th-CSS" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" /></td>
-
-                                <td><img alt="Th-Js" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" /></td>
-                                <td><img alt="Th-java" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" /></td>
-                                <td><img alt="Th-java" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" /></td>
-                                <td><img alt="Th-java" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" /></td>
-
-                                <td><img alt="Th-github" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" /></td>
-                                <td><img alt="Th-github" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" /></td>
-                                <td><img alt="Th-github" height="30px" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" /></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+                                            </div>         
+                                    </div>    
+                                </div>                                            
+                        </div>    
+                </div>                
             </div>
         </div>
     )
