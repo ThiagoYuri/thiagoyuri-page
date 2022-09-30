@@ -46,9 +46,9 @@ function App() {
               <div className='col-md-3 col-lg-3 col-xl-3 mx-auto mt-3'>
                 <h4 className='text-uppercase mb-4 font-weight-bold text-center text-warning'>Redes Sociais</h4>
                 <ul>
-                  <li><a className='text-white' style={{textDecoration:"none"}} href='#'>Instagram</a></li>
-                  <li><a className='text-white' style={{textDecoration:"none"}} href='#'>Github</a></li>
-                  <li><a className='text-white' style={{textDecoration:"none"}} href='#'>Linkedin</a></li>
+                  <li><a className='text-white' style={{textDecoration:"none"}} href='https://www.instagram.com/thiagoyuri0109/'>Instagram</a></li>
+                  <li><a className='text-white' style={{textDecoration:"none"}} href='https://github.com/ThiagoYuri'>Github</a></li>
+                  <li><a className='text-white' style={{textDecoration:"none"}} href='https://www.linkedin.com/in/thiago-yuri-1b467b206/'>Linkedin</a></li>
                 </ul>
               </div>
               <div className='col-md-3 col-lg-3 col-xl-3 mx-auto mt-3'>

@@ -6,13 +6,13 @@ import Loading from '../../Loading/Loading'
 
 
 export function Projects() {    
-     {/*Variables*/}
+     //Variables
     var ListComponents = [];
     const ListCategory = [];
     const [listRepos, setRepos] = useState([]);
     const [listComponentsFilter, setlistComponentsFilter] = useState([]);
     const [loadingStatus, setLoading] = useState(false);
-     {/*Send request get repos list*/}
+     //Send request get repos list
     useEffect(() => {  
         get((jsonConfig.GitHub.Link.AllRepos.replace("{0}", jsonConfig.GitHub.Nickname)), setRepos, (x => x.fork === false));
         get((jsonConfig.GitHub.Link.AllRepos.replace("{0}", jsonConfig.GitHub.Nickname)), setlistComponentsFilter, (x => x.fork === false));
@@ -64,7 +64,9 @@ export function Projects() {
                 <div className="row row-cols-1 row-cols-md-3 g-4" style={{ padding: '0px 20px 0px 20px' }}>
                     {ListComponents}
                 </div>
-             </div>
+                                  
+                </div>
+
             }            
         </div >
     )
