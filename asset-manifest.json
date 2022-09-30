@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/thiagoyuri-page/static/css/main.e5099530.css",
-    "main.js": "/thiagoyuri-page/static/js/main.cda23765.js",
+    "main.css": "/thiagoyuri-page/static/css/main.f1e52275.css",
+    "main.js": "/thiagoyuri-page/static/js/main.eb67fade.js",
     "static/js/787.f18add18.chunk.js": "/thiagoyuri-page/static/js/787.f18add18.chunk.js",
     "static/media/notExists.gif": "/thiagoyuri-page/static/media/notExists.1e9105bbc7ab62387a4d.gif",
     "static/media/loading.gif": "/thiagoyuri-page/static/media/loading.d5809558d3b8c9d726b7.gif",
@@ -18,12 +18,12 @@
     "static/media/studies.png": "/thiagoyuri-page/static/media/studies.0bd52472358703b9e409.png",
     "static/media/devmedia-icon.png": "/thiagoyuri-page/static/media/devmedia-icon.5b65e77fbd38850958b9.png",
     "index.html": "/thiagoyuri-page/index.html",
-    "main.e5099530.css.map": "/thiagoyuri-page/static/css/main.e5099530.css.map",
-    "main.cda23765.js.map": "/thiagoyuri-page/static/js/main.cda23765.js.map",
+    "main.f1e52275.css.map": "/thiagoyuri-page/static/css/main.f1e52275.css.map",
+    "main.eb67fade.js.map": "/thiagoyuri-page/static/js/main.eb67fade.js.map",
     "787.f18add18.chunk.js.map": "/thiagoyuri-page/static/js/787.f18add18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5099530.css",
-    "static/js/main.cda23765.js"
+    "static/css/main.f1e52275.css",
+    "static/js/main.eb67fade.js"
   ]
 }
