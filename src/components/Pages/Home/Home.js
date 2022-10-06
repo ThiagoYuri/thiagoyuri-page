@@ -46,7 +46,7 @@ function Home() {
                                 </div>
                                 <div className='container'>
                                     <div className='row '>
-                                            <div className='col-8'>
+                                            <div className='col-12 col-lg-8 col-md-6'>
                                                 <div className="card" >
                                                 <div class="card-body">
                                                     <p className={styles.TextTitle}>Sobre min</p>     
@@ -56,7 +56,7 @@ function Home() {
                                                 </div>
                                                 </div>   
                                             </div>
-                                            <div className='col-4'>
+                                            <div className='col-12 col-lg-4 col-md-6'>
                                                 <div className="card" >
                                                     <div class="card-body">
                                                         <p className={styles.TextTitle} style={{textAlign:"center"}}>Conhecimentos</p> 
