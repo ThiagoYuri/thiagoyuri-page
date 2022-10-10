@@ -1,18 +1,18 @@
 import './App.css';
 import Home from './components/Pages/Home/Home';
-/*import { useState, useEffect } from 'react';
+import Projects from './components/Pages/Projects/Projects';
+import { useState, useEffect } from 'react';
 import { get } from './script/api';
 import jsonConfig from './config/config.json';
-*/
+
 
 function App() {
-  /*const [listRepos, setRepos] = useState([]);
+  const [listRepos, setRepos] = useState([]);
 
   //Send request get repos list
   useEffect(() => {  
      get((jsonConfig.GitHub.Link.AllRepos.replace("{0}", jsonConfig.GitHub.Nickname)), setRepos, (x => x.fork === false));      
-   }, [])*/
-
+   }, [])
   return (
     <div>
       <header>
@@ -36,6 +36,7 @@ function App() {
       </header>
       <body>
         <Home />
+        <Projects ListRepos={listRepos}/>        
       </body>
       <footer style={{ marginTop: "15px" }} className='bg-dark text-white pt-5 pb-4'>
         <div className='container text-md-left'>
