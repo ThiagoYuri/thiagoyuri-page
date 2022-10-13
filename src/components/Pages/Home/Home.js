@@ -60,7 +60,7 @@ function Home() {
                                                 <div className="card" >
                                                     <div class="card-body">
                                                         <p className={styles.TextTitle} style={{textAlign:"center"}}>Conhecimentos</p> 
-                                                        <ul>{skils}</ul>                               
+                                                        <ul className='text'>{skils}</ul>                               
                                                     </div>
                                                 </div>
 

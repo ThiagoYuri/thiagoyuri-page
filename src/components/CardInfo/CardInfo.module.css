@@ -1,5 +1,8 @@
-#cardStyle {
-    border-radius: 10%; 
+#card {
+    border-radius: 10px; 
+    border-color: black; 
+    border: 1px solid rgba(248, 10, 10, 0.989); 
+    box-shadow: 0px 0px 8px 2px var(--bs-secondary);
 }
 
 
@@ -9,8 +12,8 @@
     height: 100%;
     border-radius: 10%;
     background-color: rgba(0, 0, 0, 0.829);
+    box-shadow: 10px 5px 5px black;
 }
-
 
 
 
@@ -26,8 +29,15 @@
         margin-left: auto;
         margin-right: auto;
         border-radius: 2%;
-        background-color: rgba(0, 0, 0, 0.829);
+        background-color: rgba(0, 0, 0, 0.204);
+        box-shadow: 0px 0px 10px 2px black;
     }
+    .vcenterItem{          
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
 
 
@@ -39,16 +49,14 @@
         margin-left: auto;
         margin-right: auto;
         border-radius: 2%;
-        background-color: rgba(0, 0, 0, 0.829);
-    }
-    
+        background-color: rgba(0, 0, 0, 0.204);
+        box-shadow: 0px 0px 10px 2px black;
+    }  
     .vcenterItem{
         display: flex;
         align-items: center;
     }
 }
-
-
 
 
 #titleCenter{
@@ -63,8 +71,8 @@
 
 #topics{
     border-radius: 10px;
-    border-color: rgba(0, 50, 0);
     margin-right: 2%;
     padding-right: 1%;
     padding-left: 1%;
+    white-space: nowrap
 }
