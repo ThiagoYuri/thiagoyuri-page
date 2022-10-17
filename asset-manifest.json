@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/thiagoyuri-page/static/css/main.8f3f31ec.css",
-    "main.js": "/thiagoyuri-page/static/js/main.bc2cbe8c.js",
+    "main.js": "/thiagoyuri-page/static/js/main.24d10bb9.js",
     "static/js/787.f18add18.chunk.js": "/thiagoyuri-page/static/js/787.f18add18.chunk.js",
     "static/media/notExists.gif": "/thiagoyuri-page/static/media/notExists.1e9105bbc7ab62387a4d.gif",
     "static/media/portfolio.png": "/thiagoyuri-page/static/media/portfolio.bc259b070ed4954dbb17.png",
@@ -18,11 +18,11 @@
     "static/media/devmedia-icon.png": "/thiagoyuri-page/static/media/devmedia-icon.5b65e77fbd38850958b9.png",
     "index.html": "/thiagoyuri-page/index.html",
     "main.8f3f31ec.css.map": "/thiagoyuri-page/static/css/main.8f3f31ec.css.map",
-    "main.bc2cbe8c.js.map": "/thiagoyuri-page/static/js/main.bc2cbe8c.js.map",
+    "main.24d10bb9.js.map": "/thiagoyuri-page/static/js/main.24d10bb9.js.map",
     "787.f18add18.chunk.js.map": "/thiagoyuri-page/static/js/787.f18add18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8f3f31ec.css",
-    "static/js/main.bc2cbe8c.js"
+    "static/js/main.24d10bb9.js"
   ]
 }
