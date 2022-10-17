@@ -16,12 +16,12 @@ function App() {
   return (
     <div>
       <header>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          {/*Icon navBar*/}
+        {/*<nav className="navbar navbar-expand-lg navbar-light bgPrimaryColor">
+          {/*Icon navBar
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          {/*NAVBar*/}       
+          {/*NAVBar     
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav">
               <div className="nav-item active">
@@ -32,7 +32,7 @@ function App() {
               </div>
             </ul>
           </div>
-        </nav>
+        </nav>*/}
       </header>
       <body>
         <Home />
