@@ -2,7 +2,7 @@
         "Home":{
             "Name":"Thiago Yuri",
             "AboutMe": [
-                "Comecei a programar aos 15 anos no SENAI de Taguatinga, hoje sou um programador Full-Stack com foco no back-end C-Sharp."
+                "Comecei a programar aos 15 anos no SENAI de Taguatinga, hoje sou um programador Full-Stack com foco no back-end C-Sharp. Tenho conhecimento de banco de dados SQL-Server e conceitos de Clean-Code."
             ],
             "Experiences":[
                 "SENAI - Business software solutions (2018 ~ 2022)",
@@ -21,7 +21,11 @@
                 "HTML/CSS",
                 "Bootstrap",
                 "Docker",
-                "Console"
+                "Console",
+                "Python",
+                "JavaScript",
+                "NPM",
+                "CI/CD"
             ]
         },
         "GitHub":
