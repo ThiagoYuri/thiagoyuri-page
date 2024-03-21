@@ -2,12 +2,35 @@
         "Home":{
             "Name":"Thiago Yuri",
             "AboutMe": [
-                "Comecei a programar aos 15 anos no SENAI de Taguatinga, hoje sou um programador Full-Stack com foco no back-end C-Sharp. Tenho conhecimento de banco de dados SQL-Server e conceitos de Clean-Code."
+                "I started programming at the age of 15 at SENAI Taguatinga. Today, I'm a Full-Stack developer with a focus on C-Sharp backend. I have knowledge of SQL Server databases and Clean Code concepts."
             ],
             "Experiences":[
-                "SENAI - Business software solutions (2018 ~ 2022)",
-                "WhiteCube - Data engineer (2022 ~ ----)",
-                "IESB - Analysis and systems development (2022 ~ ----)"
+                {
+                    "name":"SENAI - Business software solutions (2018 ~ 2022)",
+                    "MainTasks":[
+                        "Create projects using C#, JavaScript, TypeScript.",
+                        "Maintenance and creation of new features in a database SQL-Server.",
+                        "Creation of projects using Object-Oriented Programming, Domain-Driven Design, Model-View-Controller, Clean Code, and Unit Testing.",
+                        "Utilization of libraries and frameworks such as Bootstrap, Entity Framework, JSON Web Tokens, and React.js."
+                    ]
+                },
+                {
+                    "name":"WhiteCube - Data engineer (2022 ~ ----)",
+                    "MainTasks":[
+                        "Creation of big data analysis using cloud platforms such as Azure and Oracle.",
+                        "Maintenance and creation of new features in environments such as Synapse, Data Lake, Function App, and Power Automate.",
+                        "Maintenance on both SQL Server Serverless and dedicated databases.",
+                        "Creation of versioned environments using GitHub and DevOps CI/CD."                        
+                    ]
+                }
+            ],
+            "Certificates":[
+                {
+                    "name":"IESB - Analysis and systems development (2022 ~ ----)"                
+                },
+                {
+                    "name":"DP-203 - Microsoft Certified Azure Data Engineer Associate (2023 ~ 2024)"                
+                }
             ],
             "MySkills":[
                 "C-Sharp",
@@ -44,8 +67,9 @@
                 "519203876":{
                     "image":"studies",
                     "category":0,
+                    "link": "https://github.com/ThiagoYuri/ADS-IESB",
                     "star":{
-                        "description":"Estudos, Projetos e Provas realizadas em minha faculdade Analise e Desenvolvimento de Sistemas - IESB"
+                        "description":"Studies, projects, and exams carried out in my college program in Analysis and Systems Development at IESB."
                     }
                 },
                 "433830413":{
@@ -67,8 +91,9 @@
                 "468043889":{
                     "image":"pokedexDesktop",
                     "category":1,
+                    "link":"https://github.com/ThiagoYuri/Pokedex.WindowsForm",
                     "star":{
-                        "description":"Pokedex criada em Windows Forms conectando-se a uma API sobre pokemons e retornando as informações."
+                        "description":"Pokedex created in Windows Forms connecting to a Pokemon API and retrieving the information."
                     }
                 },
                 "516943648":{
@@ -82,8 +107,9 @@
                 "474015967":{
                     "image":"documentServe",
                     "category":1,
+                    "link":"https://github.com/ThiagoYuri/DocGenerator.Server",
                     "star":{
-                        "description":"API Geradora de documentação para empresas ou clientes e transformada em arquivo PDF."
+                        "description":"API documentation generator for companies or clients, transformed into a PDF file."
                     }
                 },
                 "518973440":{

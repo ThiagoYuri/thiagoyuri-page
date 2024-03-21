@@ -23,9 +23,11 @@ export function Projects(props) {
                     {cardSlider}
                 </div>
                 <div class="card-footer text-end">
-                    <button className='btn btn-primary'>
-                        See all
-                    </button>
+                    <a href="https://github.com/ThiagoYuri?tab=repositories">
+                        <button className='btn btn-primary'>
+                            See all
+                        </button>
+                    </a>
                 </div>
             </div >
         </div >

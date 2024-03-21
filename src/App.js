@@ -42,7 +42,7 @@ function App() {
         <div className='container text-md-left'>
           <div className='row text-md-left'>
             <div className='col-md-3 col-lg-3 col-xl-3 mx-auto mt-3'>
-              <h4 className='text-uppercase mb-4 font-weight-bold text-center text-warning'>Redes Sociais</h4>
+              <h4 className='text-uppercase mb-4 font-weight-bold text-center text-white'>SOCIAL MEDIA</h4>
               <ul>
                 <li><a className='text-white' style={{ textDecoration: "none" }} href='https://www.instagram.com/thiagoyuri0109/'>Instagram</a></li>
                 <li><a className='text-white' style={{ textDecoration: "none" }} href='https://github.com/ThiagoYuri'>Github</a></li>
@@ -50,7 +50,7 @@ function App() {
               </ul>
             </div>
             <div className='col-md-3 col-lg-3 col-xl-3 mx-auto mt-3'>
-              <h4 className='text-uppercase mb-4 font-weight-bold text-center text-warning'>Contato</h4>
+              <h4 className='text-uppercase mb-4 font-weight-bold text-center text-white'>Contact</h4>
               <p>Numero: +55 (61)98362423</p>
               <p>Email: thiagoyuri0109@gmail.com</p>
             </div>

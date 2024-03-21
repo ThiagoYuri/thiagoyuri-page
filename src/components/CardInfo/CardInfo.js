@@ -6,7 +6,8 @@ import jsonConfig from '../../config/config.json'
 function CardInfo(props) {
   //variables
   const cardInfo = props.CardInfo
-
+  const info = jsonConfig.Projects.lts[cardInfo.id.toString()]
+  
   function formatTopics(strAfter) {
     const arrayStr = strAfter.split("-")
     const newArray = arrayStr?.map((y) => {
@@ -24,7 +25,7 @@ function CardInfo(props) {
             <div>
               <div className='card-img-top' >
                 <img
-                  src={(jsonConfig.Projects.lts[cardInfo.id.toString()]?.image) !== undefined ? require("../../resources/projects/" + jsonConfig.Projects.lts[cardInfo.id.toString()]?.image + ".png") : notFound}
+                  src={(info?.image) !== undefined ? require("../../resources/projects/" + jsonConfig.Projects.lts[cardInfo.id.toString()]?.image + ".png") : notFound}
                   id={styles.imageDirectory}
                   alt="Card projects" />
               </div>
@@ -45,7 +46,7 @@ function CardInfo(props) {
                 <div style={{ width: "100%", height: "100%" }} className={styles.vcenterItem}>
                   <div >
                     <img
-                      src={(jsonConfig.Projects.lts[cardInfo.id.toString()]?.image) !== undefined ? require("../../resources/projects/" + jsonConfig.Projects.lts[cardInfo.id.toString()]?.image + ".png") : notFound}
+                      src={(info?.image) !== undefined ? require("../../resources/projects/" + info?.image + ".png") : notFound}
                       id={styles.imageTypeTwo}
                       alt="Card projects" />
                   </div>
@@ -53,7 +54,7 @@ function CardInfo(props) {
               </div>
               <div className='col-12 col-md-8'>
                 <h5 className="card-title">{cardInfo.name}</h5>
-                <p className="card-text">{jsonConfig.Projects.lts[cardInfo.id.toString()].star.description}</p>
+                <p className="card-text">{info.star.description}</p>
                 <div className="text-white">
                   {
                     cardInfo.topics?.map((data) =>
@@ -66,7 +67,7 @@ function CardInfo(props) {
 
               <div className='align-bottom'  style={{marginTop:"15px"}} >
                 <div class="card-footer text-end">
-                  <button className='btn btn-secondary'>More</button>
+                  <a href={info?.link}><button className='btn btn-secondary' >More</button></a>
                 </div>
               </div>
             </div>
